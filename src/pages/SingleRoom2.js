@@ -42,7 +42,9 @@ export default class SingleRoom2 extends Component {
             pets,
             images
         } = room;
-        const [main, ...defaultImg] = images;
+       // const [main, ...defaultImg] = images;
+        const [...defaultImg] = images;
+
       //  console.log(defaultImg);
 
         return (
